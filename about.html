@@ -14,28 +14,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container-fluid about">
-    <header>
-        <img src="/assets/images/8c445319a1704dfab1a22f4df526befe-free.png" alt="logo" title="Logo Cath Dergent"> 
-        <p class="headtext">Welkom op de portfolio van Cath Dergent</p>
-        <nav class="navbar text-center col">
-            <a href="portfolio.html" class="col p-5">Projecten</a> 
-            <a href="about.html" class="col p-5">About</a> 
-            <a href="contact.html" class="col p-5">Contact</a> 
+    <header class="row justify-content-md-center">
+        <img class="aboutimg col col-lg-2" src="/assets/images/8c445319a1704dfab1a22f4df526befe-free.png" alt="logo" title="Logo Cath Dergent"> 
+        <p class="headtext col col-md-auto">Welkom op de portfolio van Cath Dergent</p>
+        <nav class="navbar text-center col col-lg-2 navbar-expand-lg dropdown-menu">
+            <button type="button" class="btn btn-outline-dark dropdown-item"><a href="portfolio.html" class="col p-5"><img class="projects" src="/assets/images/project-management-concept-business-idea-innovation-technology-512-3823537312.png"></a></button> 
+            <button type="button" class="btn btn-outline-dark dropdown-item"><a href="about.html" class="col p-5"><img class="aboutme" src="/assets/images/150-1505152_free-download-all-about-me-icon-clipart-computer.png"></a></button> 
+            <button type="button" class="btn btn-outline-dark dropdown-item"><a href="contact.html" class="col p-5"><img class="contact" src="/assets/images/contact-icon-png-1.png"></a></button> 
         </nav>
     </header>
     <div class="row">
-        <aside class="col">skills:
-            Python
-            60%
-            Networking
-            70%
-            css
-            20%
-            photoshop
-            60%
+        <div class="col-lg-2"></div>
+        <aside class="col window row-sm col-lg-2">
+            <h1 class="title">skills:</h1>
+            <dl class="tekst">
+                <dt>Python</dt>
+                <dd>80%</dd>
+                <dt>Networking</dt>
+                <dd>70%</dd>
+                <dt>CSS</dt>
+                <dd>20%</dd>
+                <dt>photoshop</dt>
+                <dd>60%</dd>
+                <dt>Linux</dt>
+                <dd>80%</dd>
+            </dl>
         </aside>
-        <main class="col">
-            <section class="window col-5">
+        <main class="col row-sm">
+            <section class="window">
                 <article>
                     <h1 class="title">About me</h1> </article>
                     <article class="tekst">
@@ -48,8 +54,8 @@
                 </article>
             </section>
         </main>
-        <div class="col"></div>
+        <div class="col-lg-2"></div>
     </div>
-    <footer>2025 &copy;@th Dergent</footer>
+    <footer class="row">2025 &copy;@th Dergent</footer>
 </body>
 </html>
