@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Cath Dergent</title>
+    <title>Project 1 Cath Dergent</title>
+    <link rel="website icon" type="png" href="assets/images/logo.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
@@ -14,32 +15,98 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="project">
-    <header>
-        <a href="index.html"><img class="aboutimg" src="/assets/images/8c445319a1704dfab1a22f4df526befe-free.png" alt="logo" title="Logo Cath Dergent"></a>
-        <p class="headtext">Welkom op de portfolio van Cath Dergent</p>
-        <nav class="navbar text-center col">
-            <button type="button" class="btn btn-outline-dark"><a href="portfolio.html" class="col p-5"><img class="projects" src="/assets/images/project-management-concept-business-idea-innovation-technology-512-3823537312.png"></a></button> 
-            <button type="button" class="btn btn-outline-dark"><a href="about.html" class="col p-5"><img class="aboutme" src="/assets/images/150-1505152_free-download-all-about-me-icon-clipart-computer.png"></a></button> 
-            <button type="button" class="btn btn-outline-dark"><a href="contact.html" class="col p-5"><img class="contact" src="/assets/images/contact-icon-png-1.png"></a></button> 
-        </nav>
-    </header>
-    <div class="row">
-        <div class="col-1"></div>
-    <aside class="col window">
-        <p class="title">Mijn contacten</p>
-        <ul class="tekst">
-            <li> cathdergent@gmail.com</li>
-            <li>teams</li>
-            <li><i class="bi bi-discord"></i>discord</li>
-        </ul>
-    </aside>
-        <main class="col">
+    <header class="container-fluid">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between"> 
+          <h1 class="headtext fs-3">Het eerste project</h1>
+          <nav class="navbar navbar-expand-md navbar-dark p-0">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projecten
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="Portfolio.html">Overzicht</a></li>
+                      <li><a class="dropdown-item" href="Project.html">Gestructureerd bekabelen</a></li>
+                      <li><a class="dropdown-item" href="#">Galgje met python</a></li>
+                      <li><a class="dropdown-item" href="#">Project 3</a></li>
+                      <li><a class="dropdown-item" href="#">Project 4</a></li>
+                      <li><a class="dropdown-item" href="#">Project 5</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="index.html"><img class="indeximg" src="/assets/images/LogoTransparent.png" alt="Cybersecurity specialist" title="Logo Cath Dergent"></a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+        <main class="container-fluid overflow-hidden">
+            <div class="row justify-content-center gx-5">
+                <div class="col-lg-4 p-3">
+                    <aside class="window">
+                        <p class="title">Mijn contacten</p>
+                        <ul class="tekst">
+                            <li> cathdergent@gmail.com</li>
+                            <li>teams</li>
+                            <li class="bi bi-discord">discord</li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <section class="window col-lg-5">
+                    <article>
+                        <h1 class="title text-wrap" style="width: 30rem;">Gestructureerd bekabelen voor WebWizz</h1> 
+                        <p class="tekst text-wrap" style="width: 30rem;">We kregen volgende opdracht:<br><br>
+                            De firma Webwiz is een groeiend bedrijf en gaf in het verleden aan een firma de
+                            opdracht om voor hun nieuwbouw een netwerk uit te tekenen; Deze firma hechtte
+                            geen belang gestructureerd bekabelen. Net op tijd realiseert Webwiz zich
+                            dat het opgeleverd plan een recept voor een regelrechte ramp is.
+                            <br>
+                            Ze huren jouw team in om een gestructureerd bekabeld netwerk uit te tekenen dat aan al het gevraagde voldoet.
+                            </p>
+                    </article>
+                </section>
+                <div class="col-lg-4"></div>
+            </div>
+        <div class="row justify-content-center gx-5">
         <section class="window col-5">
-            <article>
-                <h1 class="title">Galgje met python</h1> 
-                <p class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam a molestias beatae tempore, voluptates quod eius commodi recusandae quos neque, tenetur officiis molestiae sint ea aut. Optio nobis adipisci quis.</p>
-            </article>
-    </main>
+            <h1 class="title">Bekabelingsplan voor WebWizz</h1>
+            <figure class="tekst">
+                <img class="img-fluid" src="/assets/images/project1-packetTracer.png" alt="Bekabelingsplan voor WebWizz" title="Bekabelingsplan voor WebWizz" width="400" height="400">
+                <figcaption class="text-wrap" style="width: 30rem;">&copy;Bekabelingsplan in packet tracer door Cath Dergent</figcaption>
+            </figure>
+        </section>
+        <section class="window col-5">
+                <h1 class="title">Rack layout voor WebWizz</h1> 
+                <figure class="tekst">
+                    <img class="img-fluid" src="/assets/images/project1-racklayout.png" alt="Rack layout voor WebWizz" title="Rack layout voor WebWizz" width="400" height="400">
+                    <figcaption>&copy; Rack layout voor WebWizz door Cath Dergent</figcaption>
+                </figure>
+        </section>
+    </div>
+    <div class="row justify-content-center gx-5">
+        <section class="window col-5">
+            <h1 class="title">Patchplan voor WebWizz</h1>
+            <figure class="tekst">
+                <img class="img-fluid" src="/assets/images/project1-patchplan.png" alt="Patchplan voor WebWizz" title="Patchplan voor WebWizz" width="400" height="400">
+                <figcaption>&copy; Patchplan door Cath Dergent</figcaption>
+            </figure>
+        </section>
+        <section class="window col-5">
+            <h1 class="title">Prijslijst voor WebWizz</h1>
+            <figure class="tekst">
+                <img class="img-fluid" src="/assets/images/project1-prijslijst.png" alt="prijslijst voor WebWizz" title="prijslijst voor WebWizz" width="400" height="400">
+                <figcaption>&copy; prijslijst door Cath Dergent</figcaption>
+            </figure>
+        </section>
+    </div>
+</main>
 <div class="col-2"></div></div>
     <footer>2025 &copy;@th Dergent</footer>
 </body>
