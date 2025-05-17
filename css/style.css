@@ -11,18 +11,14 @@ html, body {
     justify-content: center
   }
 
+  a {
+    color: white;
+  }
+
   .portfolio, .about, .project, .contact {
     background: url('https://www.transparenttextures.com/patterns/stardust.png'), black;
     background-size: 100% 100%;
   }
-
-  /* .index {
-    background-image: url(/assets/images/shoot3.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-left: 0;
-    margin-left: 0;
-  } */
 
   .aboutimg {
     max-width: 100%;
@@ -44,11 +40,6 @@ html, body {
     width: 50px;
   }
 
-
-/* .headtext {
-  padding-top: 30px;
-} */
-
 .window {
   width: 25rem;
   height: auto;
@@ -57,7 +48,14 @@ html, body {
   border-radius: 2%;
   box-shadow: 0 0 20px #c8ecff;
   padding: 20px;
-  /* position: relative; */
+}
+
+.contactwindow {
+  width: 27rem;
+}
+
+.tekstwindow {
+  width: 40rem;
 }
 
 .title {
@@ -79,25 +77,12 @@ html, body {
   border: 2px inset #c8ecff;
 }
 
-.tekstwindow {
-  width: 40rem;
-}
-
 .text-wrap {
   width: 37rem;
 }
 
 .pr1tekst {
   height: 7rem;
-}
-
-footer {
-  height: 40px;
-  padding: 10px;
-  text-align: right;
-  position: fixed;
-  bottom: 0;
-  width: 100%
 }
 
 dl.tekst {
@@ -109,6 +94,28 @@ main {
   padding-right: 0;
 }
 
+#map { 
+  height: 380px; 
+  width: 380px;
+}
+
+.progress {
+  height: auto;
+}
+
+.aboutrow {
+  height: 8rem;
+}
+
+.portfoliorow {
+  height: 5rem;
+}
+
+.skillwindow {
+  width: 25rem;
+  height: auto;
+}
+
 @font-face {
   font-family: 'Press Start 2P';
   font-style: normal;
@@ -118,7 +125,7 @@ main {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 991px) {
   .tekstwindow {
     width: 25rem;
   }
@@ -126,35 +133,57 @@ main {
   .text-wrap {
     width: 22rem;
   }
-}
-/* @media (min-width: 800px) {
+
+  .carousel {
+    visibility: hidden;
+    z-index: -8;
+  }
   .index {
-    background-size: 50% 100%;
+    background: url(/assets/images/shoot3.jpg);
+    background-size: 100% 50%;
     background-repeat: no-repeat;
     padding-left: 0;
     margin-left: 0;
   }
-  .aboutimg {
-    visibility: visible;
+
+  #map {
+    height: 250px;
+    width: 250px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (max-width:440px) {
+  .tekstwindow {
+    width: 90vw;
+  }
+
+  .text-wrap {
+    width: auto;
+  }
+
+
+  .carousel {
+    visibility: hidden;
+    z-index: -8;
+  }
   .index {
-    background-size: 50% 100%;
+    background: url(/assets/images/shoot3.jpg);
+    background-size: 100% 50%;
     background-repeat: no-repeat;
     padding-left: 0;
     margin-left: 0;
   }
-  .aboutimg {
-    visibility: visible;
+
+  .navbar, .navbar-expand {
+    position: fixed;
+    top: 0;
+    right: 0;
   }
 
-  footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 10px;
-  text-align: right;
 }
-} */
