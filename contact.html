@@ -11,11 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- eigen css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container portfolio">
-    <header class="container-fluid">
+<body class="container-fluid portfolio">
+    <header class="container-fluid mb-4 ms-6">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between"> 
           <h1 class="headtext fs-3 align-items-center">Contact</h1>
           <nav class="navbar navbar-expand-md navbar-dark p-0">
@@ -46,49 +48,55 @@
           </nav>
         </div>
       </header>
-    <div class="row">
-        <div class="col-lg-2"></div>
-    <aside class="col window row-sm col-lg-2">
-        <p class="title">Mijn contacten</p>
-        <ul class="tekst">
-            <li> cathdergent@gmail.com</li>
-            <li>teams</li>
-            <li>discord</li>
-        </ul>
-    </aside>
-    <main class="col">
-        <section class="window">
-            <article>
-                <h1 class="title">Contact</h1> </article>
-                <article class="tekst">
-                  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                    <div class="form-group">
-                      <label for="name">Name:</label>
-                      <input type="text" class="form-control" id="name" name="name*" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email*" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="subject">Subject:</label>
-                      <input type="text" class="form-control" id="subject" name="subject*" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message:</label>
-                      <textarea class="form-control" rows="10" id="message" name="message*" required></textarea>
-                    </div>
-                    <div class="form-group">
-                      <div data-netlify-recaptcha="true"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-            </article>
-        </section>
-    
-    </main>
-    <div class="col-lg-2"></div>
-    </div>
-    <footer class="row">2025 &copy;@th Dergent</footer>
+      <div class="container-fluid ms-6">
+        <div class="row gx-4 gy-4 justify-content-center align-items-start ms-6 ps-6">
+          
+          <aside class="col-lg-4">
+            <div class="window contactwindow">
+              <p class="title">Mijn contacten</p>
+              <ul class="tekst list-unstyled">
+                <li class="bi bi-mailbox-flag"><a href="contact.html"> cathdergent@gmail.com</a></li>
+                <li class="bi bi-microsoft-teams"> cath.dergent@student.ap.be</li>
+                <li class="bi bi-discord"> cath.dergent</li>
+              </ul>
+            </div>
+          </aside>
+      
+          <main class="col-lg-8">
+            <section class="window mb-2">
+              <article>
+                <h1 class="title">Contact</h1>
+              </article>
+              <article class="tekst">
+                <form name="contact-form" action="/pages/success" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                  <div class="form-group">
+                    <label for="name">Naam*:</label>
+                    <input type="text" class="form-control" id="name" name="name*" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail*:</label>
+                    <input type="email" class="form-control" id="email" name="email*" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message*:</label>
+                    <textarea class="form-control" rows="10" id="message" name="message*" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </article>
+            </section>
+          </main>
+      
+        </div>
+      </div>
+      
+    <footer class="row fixed-sticky-bottom bg-black justify-content-end">2025 &copy;@th Dergent. All rights reserved.</footer>
 </body>
 </html>    
