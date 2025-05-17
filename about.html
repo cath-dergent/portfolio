@@ -14,11 +14,11 @@
     <!-- eigen css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container about">
-    <header class="container-fluid">
+<body class="container-fluid about">
+    <header class="container-fluid mb-4">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between"> 
           <h1 class="headtext fs-3 text-center">Over mij</h1>
-          <nav class="navbar navbar-expand-md navbar-dark p-0">
+          <nav class="navbar navbar-expand-md navbar-dark  bg-black p-2">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,24 +46,65 @@
           </nav>
         </div>
       </header>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <aside class="window row-sm col-lg">
-            <h1 class="title">skills:</h1>
-            <dl class="tekst">
-                <dt>Python</dt>
-                <dd>80%</dd>
-                <dt>Networking</dt>
-                <dd>70%</dd>
-                <dt>CSS</dt>
-                <dd>20%</dd>
-                <dt>photoshop</dt>
-                <dd>60%</dd>
-                <dt>Linux</dt>
-                <dd>80%</dd>
-            </dl>
+      <div class="row row-cols-2 ">
+        <aside class="window col-lg col-sm-12 skillwindow ms-1">
+          <h1 class="title">Skills:</h1>
+          <div class="tekst">
+        
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>Python</span>
+              <span>80%</span>
+            </div>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" style="width: 80%;"></div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>Networking</span>
+              <span>70%</span>
+            </div>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" style="width: 70%;"></div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>CSS</span>
+              <span>20%</span>
+            </div>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" style="width: 20%;"></div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>Photoshop</span>
+              <span>60%</span>
+            </div>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" style="width: 60%;"></div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>Linux</span>
+              <span>80%</span>
+            </div>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" style="width: 80%;"></div>
+            </div>
+            </div>
+          </div>
         </aside>
-        <main class="row-sm col-lg">
+        
+        <main>
+          <div  class="col-lg-6 col">
             <section class="window tekstwindow">
                 <article>
                     <h1 class="title">About me</h1> </article>
@@ -79,9 +120,9 @@
                     waar bedreigingen vroeg worden opgespoord en systemen optimaal worden beschermd.</p>
                 </article>
             </section>
+          </div>
         </main>
-        <div class="col-lg-2"></div>
-    </div>
-    <footer class="container-fluid bg-black text-right">2025 &copy;@th Dergent. All rights reserved</footer>
+      </div>
+    <footer class="row fixed-sticky-bottom bg-black justify-content-end">2025 &copy;@th Dergent. All rights reserved.</footer>
 </body>
 </html>

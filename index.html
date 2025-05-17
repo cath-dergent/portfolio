@@ -13,13 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen css-->
      <link rel="stylesheet" href="css/style.css">
+     <!--JS-->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin="" defer></script>
+     <script src="./js/leaflet.js" defer></script>
+     <script src="./js/api.js" defer></script>
 </head>
-<body class="index">
+<body class="index overflow-hidden">
     <header class="container-fluid">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between"> 
-          <h1 class="headtext fs-3">Welkom op de portfolio van </h1>
-          <h2 class="headtext fs-3">Cath Dergent</h2>
-          <nav class="navbar navbar-expand-md navbar-dark p-0">
+          <h1 class="headtext fs-3">Welkom op de portfolio van Cath Dergent</h1>
+          <nav class="navbar navbar-expand-md navbar-dark  bg-black p-2">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -47,31 +55,38 @@
           </nav>
         </div>
       </header>
-      <aside class="col-lg-6">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/images/shoot3.jpg" class="d-block w-100" alt="" height="700px">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/images/shoot6.jpg" class="d-block w-100" alt="" height="700px">
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/images/shoot5.jpg" class="d-block w-100" alt="" height="700px">
-            </div>
+
+      <div class="row-lg-12 justify-content-center">
+      <main class="col-lg-6">
+
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/images/shoot3.jpg" class="d-block w-100" alt="" height="700px">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="/assets/images/shoot8.jpg" class="d-block w-100" alt="" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/shoot5.jpg" class="d-block w-100" alt="" height="700px">
+          </div>
         </div>
-      </aside>
-    <main class="col-lg-6"> 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
-    <footer class="container-fluid bg-dark text-center">2025 &copy;@th Dergent</footer>
+
+    <aside class="row-sm row-md col-lg-6 align-items-center">
+      <div id="map" class="window">
+      </div>
+    </aside>
+      
+    <footer class="row fixed-sticky-bottom bg-black justify-content-end">2025 &copy;@th Dergent. All rights reserved.</footer>
 </body>
 </html>
