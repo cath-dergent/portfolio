@@ -22,10 +22,9 @@ html, body {
 
   .aboutimg {
     max-width: 100%;
-    width: 100px;
+    width: 92px;
     position: absolute;
     left: 0;
-    visibility: hidden;
   }
 
   .indeximg {
@@ -89,6 +88,10 @@ dl.tekst {
   height: 275px;
 }
 
+.skilltekst {
+  width: 25rem;
+}
+
 main {
   padding-left: 0;
   padding-right: 0;
@@ -99,21 +102,25 @@ main {
   width: 380px;
 }
 
-.progress {
-  height: auto;
-}
-
 .aboutrow {
-  height: 8rem;
+  height: 7rem;
 }
 
 .portfoliorow {
   height: 5rem;
 }
 
+.contactrow {
+  height: 4rem;
+}
+
 .skillwindow {
-  width: 25rem;
-  height: auto;
+  width: 19rem;
+  height: 20rem;
+}
+
+.skilltitle {
+  width: 18rem;
 }
 
 @font-face {
@@ -171,6 +178,7 @@ main {
   .carousel {
     visibility: hidden;
     z-index: -8;
+    height: 0;
   }
   .index {
     background: url(/assets/images/shoot3.jpg);
@@ -184,6 +192,15 @@ main {
     position: fixed;
     top: 0;
     right: 0;
+  }
+
+  #map {
+    height: 50vh;
+    width: 50vh;
+  }
+
+  .indexmain {
+    height: 50vh;
   }
 
 }
