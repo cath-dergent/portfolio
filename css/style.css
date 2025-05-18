@@ -123,6 +123,12 @@ main {
   width: 18rem;
 }
 
+.indexfooter {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
 @font-face {
   font-family: 'Press Start 2P';
   font-style: normal;
